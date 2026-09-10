@@ -12,7 +12,7 @@
 
 Whenever a developer pushes code or opens a Pull Request, ReviewForge analyzes the changes. If it spots a typo, it leaves a polite PR comment. **If it detects a critical security vulnerability or architectural flaw, it autonomously creates a labeled GitHub Issue, links it to your PR, and alerts your team.**
 
-## ✨ Key Features
+## ⚡ Key Features
 
 - **Multi-Provider AI:** Out-of-the-box support for Google Gemini, OpenAI, Nvidia NIM, Groq, or any OpenAI-compatible endpoint.
 - **Smart Routing:** Smart routing ensures small UI tweaks get a fast, cheap review (e.g., `gemini-3.7-flash`), while complex core changes get deep security analysis (e.g., `gemini-3.7-pro` or `gpt-oss-120b`).
@@ -21,7 +21,7 @@ Whenever a developer pushes code or opens a Pull Request, ReviewForge analyzes t
 - **Company-Specific Rules (`.reviewforge.md`):** Drop a `.reviewforge.md` file in your repository root to teach the AI your specific coding standards (e.g., "Always use strict typing", "Never use raw SQL").
 - **Serverless:** Runs entirely on GitHub Actions. Zero servers to maintain. Zero webhook configs. Zero hosting costs.
 
-## 🚀 Quick Setup (GitHub Actions)
+## 📦 Quick Setup (GitHub Actions)
 
 Add ReviewForge to any repository in **under 30 seconds**. 
 
@@ -67,7 +67,7 @@ jobs:
 | `deep_model` | Advanced model used for complex/security PRs. | `gemini-3.7-pro` | No |
 | `auto_create_issues` | Automatically create GitHub issues for critical vulnerabilities. | `true` | No |
 
-## 🛡️ How the Autonomous Issue Creator Works
+## How the Autonomous Issue Creator Works
 
 ReviewForge's AI engine is instructed to output a specific JSON payload if a change is highly destructive (e.g., SQL Injection, unauthenticated endpoint). 
 
